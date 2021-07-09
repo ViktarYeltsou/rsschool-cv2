@@ -10,16 +10,17 @@ occupation: sr. technical consultant
 looking for position: Front End Developer \
 salary: to be discussed
 
-##Education
+## Education
 
 Belorussian State University of Informatics and Radioelectronics 
 
-##Experience
+## Experience
 
 HTML/CSS/JS/React-Redux
 
-###Hobby
+### Hobby
 
 real estate, real fishing, architecture, house building\
 
 ready for action
+
