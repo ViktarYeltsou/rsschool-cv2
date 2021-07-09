@@ -20,7 +20,7 @@ HTML/CSS/JS/React-Redux
 
 ### Hobby
 
-real estate, real fishing, architecture, house building\
+real estate, real fishing, architecture, house building
 
 ready for action
 
