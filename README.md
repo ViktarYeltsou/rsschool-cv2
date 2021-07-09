@@ -1,1 +1,1 @@
-https://VictarYeltsou.github.io/rsschool-cv/cv.md
+https://ViktarYeltsou.github.io/rsschool-cv/cv.md
