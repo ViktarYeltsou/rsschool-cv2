@@ -1,1 +1,1 @@
-# rsschool-cv
+https://VictarYeltsou.github.io/rsschool-cv/cv
