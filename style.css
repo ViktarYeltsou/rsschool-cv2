@@ -3,11 +3,14 @@
 body {
     font-family: 'Roboto Mono', monospace;
 }
+.container{
+    position: center;
+}
 .photo img{
 
     width: 200px;
     /*float: right; /* Выравнивание по правому краю */
-    margin: 5px 5px 0px 5px; /* Отступы вокруг фотографии */
+    margin: 5px 5px 0 5px; /* Отступы вокруг фотографии */
 
 }
 .links {
