@@ -1,5 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
 .photo img{
+
     width: 200px;
     /*float: right; /* Выравнивание по правому краю */
-    margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+    margin: 5px 5px 0px 5px; /* Отступы вокруг фотографии */
+
+}
+.links {
+    display: inline-block;
+
+}
+header, section {
+    border-bottom: 1px solid;
+}
+footer img {
+    width: 100px;
 }
