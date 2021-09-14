@@ -1,28 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+html {
+    background-color: beige;
+}
 body {
     font-family: 'Roboto Mono', monospace;
 }
+
 .container{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    max-width: 1024px;
+    /*min-width: 600px;*/
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #008000;
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "aside main"
+        "footer footer";
+    /*grid-template-rows: 80px 1fr 70px;  */
+    grid-template-columns: 30% 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    }
+
+@media (max-width: 620px) {
+    .container { 
+        font-size: 80%;
+      grid-template-areas: 
+        "header"
+        "aside"
+        "main"
+        "footer";
+     /* grid-template-rows: 80px 1fr 70px 1fr 70px;  */
+       grid-template-columns: 1fr; 
+       justify-items: center;
+    }
+}
+   
+header {
+    border: 1px solid blue;
+    grid-area: header;
+}
+aside {
+    border: 1px solid gold;
+    grid-area: aside;
+    justify-items: center;
+}
+.contact-info {
+    /*border: 1px solid black;*/
+
+}
+main {
+    border: 1px solid red;
+    grid-area: main;
+
+
 }
 .photo img{
 
     width: 200px;
-    /*float: right; /* Выравнивание по правому краю */
+    /* float: right; /* Выравнивание по правому краю */
     margin: 5px 5px 0 5px; /* Отступы вокруг фотографии */
 
 }
 .links {
-    display: inline-block;
+    /*display: inline-block;*/
 
 }
-header, section {
-    border-bottom: 1px solid;
+
+footer {
+    border: 1px solid black;
+    grid-area: footer;
+
+    
 }
 footer img {
     width: 100px;
+
 }
