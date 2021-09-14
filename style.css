@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 html {
-    background-color: beige;
+    
 }
 body {
     font-family: 'Roboto Mono', monospace;
+    background-color: #e6e2d4;
 }
 
 .container{
@@ -21,7 +22,7 @@ body {
     /*grid-template-rows: 80px 1fr 70px;  */
     grid-template-columns: 30% 1fr;
     grid-row-gap: 10px;
-    grid-column-gap: 10px;
+    /* grid-column-gap: 10px; */
     }
 
 @media (max-width: 620px) {
@@ -36,41 +37,50 @@ body {
        grid-template-columns: 1fr; 
        justify-items: center;
     }
+
 }
    
 header {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     grid-area: header;
 }
 aside {
-    border: 1px solid gold;
+    border: 1px solid black;
     grid-area: aside;
     justify-items: center;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
 }
+
 .contact-info {
     /*border: 1px solid black;*/
 
 }
 main {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     grid-area: main;
-
+    padding: 15px;
+    border: 1px solid black ;
+    border-left: none;
 
 }
 .photo img{
 
-    width: 200px;
+    max-width: 200px;
     /* float: right; /* Выравнивание по правому краю */
     margin: 5px 5px 0 5px; /* Отступы вокруг фотографии */
+    width: 90%;
 
 }
 .links {
     /*display: inline-block;*/
-
+    text-align: left;
 }
 
 footer {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     grid-area: footer;
 
     
