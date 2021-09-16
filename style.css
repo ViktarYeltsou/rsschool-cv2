@@ -4,7 +4,7 @@ html {
     
 }
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
     background-color: #e6e2d4;
 }
 
@@ -45,7 +45,7 @@ header {
     grid-area: header;
 }
 aside {
-    border: 1px solid black;
+    border: 1px solid gray;
     grid-area: aside;
     justify-items: center;
     background-color: whitesmoke;
@@ -62,21 +62,34 @@ main {
     /* border: 1px solid red; */
     grid-area: main;
     padding: 15px;
-    border: 1px solid black ;
+    border: 1px solid gray ;
     border-left: none;
 
 }
 .photo img{
 
     max-width: 200px;
+    /* border: 2px solid whitesmoke; */
+    border-radius: 50%;
     /* float: right; /* Выравнивание по правому краю */
     margin: 5px 5px 0 5px; /* Отступы вокруг фотографии */
     width: 90%;
 
 }
+
 .links {
     /*display: inline-block;*/
     text-align: left;
+}
+li {
+    list-style-type: none;
+}
+.location {
+    background-image: url(src/icons/location.svg);
+    size: 10%;
+    /* font-family: "Font Awesome 5 Free"; */
+    /* font-weight: 900; */
+    color: red;
 }
 
 footer {
