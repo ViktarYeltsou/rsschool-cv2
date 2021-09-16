@@ -1,8 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"); */
-html {
-    
-}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #e6e2d4;
@@ -39,7 +35,11 @@ body {
     }
 
 }
-   
+
+section {
+    border-bottom: 1px solid #000000;
+}
+
 header {
     /* border: 1px solid blue; */
     grid-area: header;
@@ -52,12 +52,11 @@ aside {
     margin: 0;
     padding: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.contact-info {
-    /*border: 1px solid black;*/
-
-}
 main {
     /* border: 1px solid red; */
     grid-area: main;
@@ -65,6 +64,15 @@ main {
     border: 1px solid gray ;
     border-left: none;
 
+}
+.contact-info {
+
+    border: 1px solid red;
+}
+
+.rs-logo {
+    border: 1px solid black;
+    
 }
 .photo img{
 
@@ -95,10 +103,22 @@ li {
 footer {
     /* border: 1px solid black; */
     grid-area: footer;
-
-    
 }
-footer img {
-    width: 100px;
 
+.fa-github {
+    font-size: 50px;
+    color: #cccccc;
+    text-decoration: none;
+    transition: 1s linear;
+}
+.fa-github:hover {
+    color: black;
+}
+
+.rssvg {
+    height: 50px;
+    /* background-image: url("/img/rs_school_js.svg"); */
+    /* background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; */
 }
