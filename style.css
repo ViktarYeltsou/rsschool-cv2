@@ -1,6 +1,8 @@
 body {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   background-color: #e6e2d4;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
 }
 
 .container {
@@ -8,7 +10,7 @@ body {
   /* height: 800px; */
   margin: 0 auto;
   background-color: white;
-  border: 1px solid #008000;
+  border: 1px solid #000000;
   display: grid;
   grid-template-areas:
     "header main"
@@ -20,6 +22,7 @@ body {
   /* grid-row-gap: 10px; */
   /* grid-column-gap: 10px; */
 	margin-top: 30px;
+	box-shadow: 10px 10px 50px #aaaaaa;
 }
 
 @media (max-width: 620px) {
@@ -67,6 +70,10 @@ main {
   grid-area: main;
   padding: 15px;
   /* border: 1px solid gray; */
+}
+
+details, .p-tab {
+	padding-left: 40px;
 }
 footer {
   /* border: 1px solid black; */
