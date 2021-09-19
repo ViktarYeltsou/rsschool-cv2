@@ -16,14 +16,28 @@
 </head>
 
 <body>
+
 	<div class="container">
 		<header>
-			<span class="photo">
-				<img src="img/myava.png" alt="Avatar">
-			</span>
-			<h1>Victor Yeltsov</h1>
+			<div class="burger-menu">
+				<a href="#" class="burger-menu-button">
+					<span class="burger-menu-lines"></span>
+				</a>
+				<nav class="burger-menu-nav">
+					<a href="#occ" class="burger-menu-link">Occupation</a>	
+					<a href="#obj" class="burger-menu-link">Objective</a>	
+					<a href="#skil" class="burger-menu-link">Skills</a>	
+					<a href="#educ" class="burger-menu-link">Education</a>	
+					<a href="#reas" class="burger-menu-link">Reason</a>	
+				</nav>
+				<div class="burger-menu-overlay"></div>
+			</div>
 		</header>
 		<aside>
+				<div class="photo">
+					<img src="./img/myava.png" alt="Avatar">
+					<h1>Victor Yeltsov</h1>
+				</div>
 				<div class="links">
 					<ul>
 						<li><i class="fas fa-map-marker-alt"></i> Minsk</li>
@@ -35,15 +49,15 @@
 				</div>
 		</aside>
 		<main>
-			<section class="occupation">
+			<section class="occupation" id="occ">
 				<h2>Occupation</h2>
 				<p class="p-tab">Lead engineer-consultant (Complicated printing systems. Installation/Maintenance/Repair)</p>
 			</section>
-			<section class="objective">
+			<section class="objective" id="obj">
 				<h2>Objective</h2>
 				<p class="p-tab">Applying for a position of a Junior Frontend Developer as a step to become Backend Developer.</p>
 			</section>
-			<section class="skills">
+			<section class="skills" id=skil>
 				<h2>Skills</h2>
 				<ul class="p-tab">
 					<li>HTML/CSS</li>
@@ -52,7 +66,7 @@
 					<li>English: A2</li>
 				</ul>
 			</section>
-			<section class="education">
+			<section class="education" id="educ">
 				<h2>Education</h2>
 				<details>
 					<summary>
@@ -74,11 +88,11 @@
 					<p>Specialization: Radiotechnical Systems</p>
 				</details>
 			</section>
-			<section class="hobby">
+			<section class="hobby" id="hob">
 				<h2>Hobby</h2>
 				<p class="p-tab">real estate, real fishing, architecture, house building</p>
 			</section>
-			<section class="reason-job">
+			<section class="reason-job" id="reas">
 				<h2>Why I'm switching</h2>
 				<p class="p-tab">The time comes when your job limits your growth and becomes not so interesting and ceases to bring
 					pleasure<br>That's why my goal is to find out brand new job (maybe less paid) but with great opportunities</p>
@@ -92,6 +106,7 @@
 			<span><a class="fab fa-github" href="https://github.com/ViktarYeltsou"></a> </span>
 		</footer>
 	</div>
+	<script src="./index.js"></script>
 </body>
 
 </html>

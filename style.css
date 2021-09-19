@@ -1,8 +1,17 @@
+* {
+	box-sizing: border-box;
+}
 body {
   /* font-family: "Roboto", sans-serif; */
   background-color: #e6e2d4;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+}
+header {
+	display: none;
+transition: 0.5s;
 }
 
 .burger-menu-button {
@@ -13,11 +22,12 @@ body {
 	width: 80px;
 	height: 80px;
 	border-radius: 10%;
-	background-color: #a0a0a0;
+	/* background-color: #a0a0a0; */
 }
 .burger-menu-button:hover .burger-menu-lines {
 	filter: brightness(0.9);
 }
+
 .burger-menu-lines,
 .burger-menu-lines::after,
 .burger-menu-lines::before {
@@ -33,11 +43,11 @@ body {
 }
 .burger-menu-lines::before {
 	content: "";
-	top: -12px;
+	top: -14px;
 }
 .burger-menu-lines::after {
 	content: "";
-	top: 12px;
+	top: 14px;
 }
 .burger-menu-active .burger-menu-lines {
 	background-color: transparent;
@@ -100,7 +110,7 @@ body {
   border: 1px solid #000000;
   display: grid;
   grid-template-areas:
-    "header main"
+    "aside main"
     "aside main"
     "aside main"
     "footer main";
@@ -114,40 +124,44 @@ body {
 
 @media (max-width: 767px) {
   .container {
-    font-size: 80%;
+		width: 100vw;
+		padding: 0px;
+		margin: 0px;
     grid-template-areas:
       "header"
       "aside"
       "main"
       "footer";
-    /* grid-template-rows: 80px 1fr 70px 1fr 70px;  */
     grid-template-columns: 100%;
 		grid-template-rows: auto;
-
-    justify-items: center;
   }
+	header {
+		display: block;
+		position: fixed;
+		height: 100px;
+		background-color: #a0a0a0;
+		transition: 0.5s;
+	}
+
+	aside {
+		padding: 100px;
+	}
 	header, aside, footer {
 		width: 100%;
 	}
+
 }
 
 section {
   border-bottom: 1px solid #000000;
 }
 
-header {
-  /* border: 1px solid blue; */
-  grid-area: header;
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 10px;
-	background-color: whitesmoke;
 
-}
 aside {
-  /* border: 1px solid gray; */
-  grid-area: aside;
+  border: 1px solid gray;
+	grid-area: aside;
   /* justify-items: center; */
+	/* display: block; */
   background-color: whitesmoke;
   margin: 0px;
 
@@ -171,7 +185,12 @@ footer {
 	background-color: whitesmoke;
 
 }
+.photo {
+	/* border: 1px solid red; */
+	text-align: center;
+	padding-top: 20px;
 
+}
 .photo img {
   max-width: 250px;
   /* border: 2px solid whitesmoke; */
@@ -182,7 +201,6 @@ footer {
 }
 
 .links {
-  /*display: inline-block;*/
   text-align: left;
   margin-left: 0px;
 }
@@ -205,8 +223,4 @@ ul {
 
 .rssvg {
   height: 50px;
-  /* background-image: url("/img/rs_school_js.svg"); */
-  /* background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat; */
 }
