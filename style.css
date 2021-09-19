@@ -6,7 +6,7 @@ body {
   /* font-family: "Roboto", sans-serif; */
   background-color: #e6e2d4;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
+	/* font-size: 20px; */
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
@@ -22,8 +22,8 @@ header {
 	top: 0px;
 	right: 0px;
 	z-index: 30;
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	border-radius: 10%;
 	background-color: #c0c0c0;
 }
@@ -64,7 +64,7 @@ header {
 	transform: rotate(-45deg);
 }
 .burger-menu-nav {
-	padding-top: 80px;
+	padding-top: 60px;
 	position: fixed;
 	z-index: 20;
 	display: flex;
@@ -79,8 +79,8 @@ header {
 	top: 0px;
 }
 .burger-menu-link {
-	padding: 30px;
-	font-size: 32px;
+	padding: 10px;
+	font-size: 24px;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 5px;
@@ -141,7 +141,7 @@ header {
 		position: fixed;
 		top: 0px;
 		left: 0px;
-		height: 80px;
+		height: 60px;
 		background-color: #c0c0c0;
 		/* border: 1px solid red; */
 	}
@@ -151,7 +151,7 @@ header {
 		width: 100vw;
 	}
 	aside {
-		padding: 100px 10%;
+		padding: 100px 10% 30px 10%;
 		/* border: 1px solid red; */
 	}
 	.occupation,
@@ -165,7 +165,9 @@ header {
 	}
 
 }
-
+pre {
+	overflow: auto;
+}
 p {
 	text-align: justify;
 }
