@@ -5,7 +5,94 @@ body {
 	font-size: 20px;
 }
 
+.burger-menu-button {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 30;
+	width: 80px;
+	height: 80px;
+	border-radius: 10%;
+	background-color: #a0a0a0;
+}
+.burger-menu-button:hover .burger-menu-lines {
+	filter: brightness(0.9);
+}
+.burger-menu-lines,
+.burger-menu-lines::after,
+.burger-menu-lines::before {
+	position: absolute;
+	width: 40px;
+	height: 6px;
+	background-color: #ffffff;
+}
+.burger-menu-lines{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.burger-menu-lines::before {
+	content: "";
+	top: -12px;
+}
+.burger-menu-lines::after {
+	content: "";
+	top: 12px;
+}
+.burger-menu-active .burger-menu-lines {
+	background-color: transparent;
+}
+.burger-menu-active .burger-menu-lines::before {
+	top: 0px;
+	transform: rotate(45deg);
+}
+.burger-menu-active .burger-menu-lines::after {
+	top: 0px;
+	transform: rotate(-45deg);
+}
+.burger-menu-nav {
+	padding-top: 80px;
+	position: fixed;
+	z-index: 20;
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	background-color: #2a2a2a;
+	overflow-y: auto;
+	right: -100%;
+}
+.burger-menu-active .burger-menu-nav {
+	right: 0px;
+}
+.burger-menu-link {
+	padding: 30px;
+	font-size: 32px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: bold;
+	color: #ffffff;
+}
+.burger-menu-link:hover {
+	filter: brightness(0.9);
+}
+.burger-menu-overlay {
+	display: none;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+}
+.burger-menu-active .burger-menu-overlay {
+	display: block;
+	background-color: rgba(0, 0, 0, 0.5);
+	
+}
+
 .container {
+	/* z-index: 5; */
   max-width: 1024px;
   /* height: 800px; */
   margin: 0 auto;
@@ -25,7 +112,7 @@ body {
 	box-shadow: 10px 10px 50px #aaaaaa;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 767px) {
   .container {
     font-size: 80%;
     grid-template-areas:
