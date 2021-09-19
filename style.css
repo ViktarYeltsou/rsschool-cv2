@@ -11,18 +11,19 @@ body {
 }
 header {
 	display: none;
-transition: 0.5s;
+	margin: 0px;
+	padding: 0px;
 }
 
 .burger-menu-button {
 	position: fixed;
-	top: 10px;
-	right: 10px;
+	top: 0px;
+	right: 0px;
 	z-index: 30;
 	width: 80px;
 	height: 80px;
 	border-radius: 10%;
-	/* background-color: #a0a0a0; */
+	/* background-color: #090909; */
 }
 .burger-menu-button:hover .burger-menu-lines {
 	filter: brightness(0.9);
@@ -107,7 +108,7 @@ transition: 0.5s;
   /* height: 800px; */
   margin: 0 auto;
   background-color: white;
-  border: 1px solid #000000;
+  /* border: 1px solid #000000; */
   display: grid;
   grid-template-areas:
     "aside main"
@@ -116,40 +117,42 @@ transition: 0.5s;
     "footer main";
   grid-template-columns: 35% 1fr;
   grid-template-rows: 1fr 20% 1fr 10%;
-  /* grid-row-gap: 10px; */
-  /* grid-column-gap: 10px; */
 	margin-top: 30px;
 	box-shadow: 10px 10px 50px #aaaaaa;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .container {
 		width: 100vw;
-		padding: 0px;
+		padding-top: 0px;
 		margin: 0px;
     grid-template-areas:
       "header"
       "aside"
       "main"
       "footer";
-    grid-template-columns: 100%;
+    grid-template-columns: 100vw;
 		grid-template-rows: auto;
+		box-shadow: none;
   }
 	header {
 		display: block;
 		position: fixed;
-		height: 100px;
+		top: 0px;
+		left: 0px;
+		height: 80px;
 		background-color: #a0a0a0;
-		transition: 0.5s;
+		/* border: 1px solid red; */
 	}
 
-	aside {
-		padding: 100px;
-	}
 	header, aside, footer {
-		width: 100%;
+		display: block;
+		width: 100vw;
 	}
-
+	aside {
+		padding: 100px 10%;
+		/* border: 1px solid red; */
+	}
 }
 
 section {
@@ -158,18 +161,17 @@ section {
 
 
 aside {
-  border: 1px solid gray;
 	grid-area: aside;
-  /* justify-items: center; */
-	/* display: block; */
   background-color: whitesmoke;
-  margin: 0px;
+  /* margin: 0px; */
 
 }
 main {
   /* border: 1px solid red; */
+
   grid-area: main;
   padding: 15px;
+	
   /* border: 1px solid gray; */
 }
 
@@ -181,6 +183,7 @@ footer {
   grid-area: footer;
   display: flex;
   justify-content: space-evenly;
+	
   /* padding: 10px; */
 	background-color: whitesmoke;
 
