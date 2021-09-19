@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 body {
   /* font-family: "Roboto", sans-serif; */
@@ -8,6 +9,7 @@ body {
 	font-size: 20px;
 	margin: 0px;
 	padding: 0px;
+	overflow-x: hidden;
 }
 header {
 	display: none;
@@ -23,7 +25,7 @@ header {
 	width: 80px;
 	height: 80px;
 	border-radius: 10%;
-	/* background-color: #090909; */
+	background-color: #c0c0c0;
 }
 .burger-menu-button:hover .burger-menu-lines {
 	filter: brightness(0.9);
@@ -67,13 +69,14 @@ header {
 	z-index: 20;
 	display: flex;
 	flex-flow: column;
-	height: 100%;
-	background-color: #2a2a2a;
+	width: 100%;
+	background-color: #c0c0c0;
+	opacity: 90%;
 	overflow-y: auto;
-	right: -100%;
+	top: -100%;
 }
 .burger-menu-active .burger-menu-nav {
-	right: 0px;
+	top: 0px;
 }
 .burger-menu-link {
 	padding: 30px;
@@ -98,17 +101,14 @@ header {
 }
 .burger-menu-active .burger-menu-overlay {
 	display: block;
-	background-color: rgba(0, 0, 0, 0.5);
+	/* background-color: rgba(0, 0, 0, 0.5); */
 	
 }
 
 .container {
-	/* z-index: 5; */
   max-width: 1024px;
-  /* height: 800px; */
   margin: 0 auto;
   background-color: white;
-  /* border: 1px solid #000000; */
   display: grid;
   grid-template-areas:
     "aside main"
@@ -118,6 +118,7 @@ header {
   grid-template-columns: 35% 1fr;
   grid-template-rows: 1fr 20% 1fr 10%;
 	margin-top: 30px;
+	margin-bottom: 30px;
 	box-shadow: 10px 10px 50px #aaaaaa;
 }
 
@@ -141,7 +142,7 @@ header {
 		top: 0px;
 		left: 0px;
 		height: 80px;
-		background-color: #a0a0a0;
+		background-color: #c0c0c0;
 		/* border: 1px solid red; */
 	}
 
@@ -153,8 +154,21 @@ header {
 		padding: 100px 10%;
 		/* border: 1px solid red; */
 	}
+	.occupation,
+	.objective,
+	.skills,
+	.education,
+	.hobby,
+	.code {
+		margin-top: -80px;
+		padding-top: 80px;		
+	}
+
 }
 
+p {
+	text-align: justify;
+}
 section {
   border-bottom: 1px solid #000000;
 }

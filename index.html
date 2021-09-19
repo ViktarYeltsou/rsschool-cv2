@@ -13,6 +13,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+	<link rel="stylesheet" href="./css/github-dark-dimmed.min.css">
 </head>
 
 <body>
@@ -28,7 +29,8 @@
 					<a href="#obj" class="burger-menu-link">Objective</a>	
 					<a href="#skil" class="burger-menu-link">Skills</a>	
 					<a href="#educ" class="burger-menu-link">Education</a>	
-					<a href="#reas" class="burger-menu-link">Reason</a>	
+					<a href="#cod" class="burger-menu-link">Code</a>	
+					<a href="#hob" class="burger-menu-link">Hobby</a>	
 				</nav>
 				<div class="burger-menu-overlay"></div>
 			</div>
@@ -87,6 +89,25 @@
 					<p>Master’s degree</p>
 					<p>Specialization: Radiotechnical Systems</p>
 				</details>
+				<p></p>
+			</section>
+			<section class="code" id="cod">
+				<div class="code-sample">
+					<h2>Code Sample</h2>
+					<!-- <pre>
+						<code>
+//Introduction to Currying and Partial Application
+function add(x) {
+	return function(y) {
+		return function (z){
+			return x + y + z;
+		}
+	}
+}
+add(10)(20)(30);
+						</code>
+					</pre> -->
+					</div>
 			</section>
 			<section class="hobby" id="hob">
 				<h2>Hobby</h2>
@@ -95,7 +116,7 @@
 			<section class="reason-job" id="reas">
 				<h2>Why I'm switching</h2>
 				<p class="p-tab">The time comes when your job limits your growth and becomes not so interesting and ceases to bring
-					pleasure<br>That's why my goal is to find out brand new job (maybe less paid) but with great opportunities</p>
+					pleasure. That's why my goal is to find out brand new job (maybe less paid) but with great opportunities!</p>
 			</section>
 		</main>
 		<footer>
@@ -107,18 +128,8 @@
 		</footer>
 	</div>
 	<script src="./index.js"></script>
+	<script src="./js/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 </body>
 
 </html>
-
-<!-- HTML is valid (+10): https://validator.w3.org/nu/?doc=https%3A%2F%2Fviktaryeltsou.github.io%2Frsschool-cv%2F -->
-<!-- semantic HTML (+10) -->
-<!-- using <h1> <h2> (+10) -->
-<!-- using css-styles (+10) -->
-<!-- main block auto center (+10) -->
-<!-- image with 'alt' (+10) -->
-<!-- contacts & skills are ul > li elements (+10) -->
-<!-- CV contents contacts, candidate info, skill list, link to project, education, english level (+10) -->
-<!-- cv in english (+10) -->
-<!-- self-test, Pull request, screen shots (+10) -->
-<!-- all is OK. Score 100/100 -->
