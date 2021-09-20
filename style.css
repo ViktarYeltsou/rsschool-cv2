@@ -43,14 +43,19 @@ header {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	transition: 0.3s;
 }
 .burger-menu-lines::before {
 	content: "";
 	top: -14px;
+	transition: 0.3s;
+
 }
 .burger-menu-lines::after {
 	content: "";
 	top: 14px;
+	transition: 0.3s;
+
 }
 .burger-menu-active .burger-menu-lines {
 	background-color: transparent;
@@ -74,12 +79,14 @@ header {
 	opacity: 90%;
 	overflow-y: auto;
 	top: -100%;
+	transition: 0.3s;
 }
 .burger-menu-active .burger-menu-nav {
 	top: 0px;
+	transition: 0.3s;
 }
 .burger-menu-link {
-	padding: 10px;
+	padding: 5px;
 	font-size: 24px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -144,6 +151,11 @@ header {
 		height: 60px;
 		background-color: #c0c0c0;
 		/* border: 1px solid red; */
+	}
+	.menu {
+		text-align: center;
+		text-transform: uppercase;
+		color: #ffffff;
 	}
 
 	header, aside, footer {
