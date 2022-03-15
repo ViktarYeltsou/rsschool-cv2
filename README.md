@@ -1,1 +1,1 @@
-https://ViktarYeltsou.github.io/rsschool-cv/
+https://ViktarYeltsou.github.io/rsschool-cv/cv
